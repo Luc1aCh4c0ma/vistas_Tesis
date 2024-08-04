@@ -79,48 +79,35 @@ h1 {
 
 .table {
     background-color: #e3d1bb;
-    padding: 40px;
+    padding: 60px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
-.table-icon img {
-    width: 250px;
+.table {
+    text-align: center;
+    margin: 20px;
+}
+.table button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    transition: transform 0.2s ease; /* Transición para animar el cambio de escala */
+}
+.table button:active {
+    transform: scale(1.1); /* Agrandar el botón al hacer clic */
+}
+.table button img {
+    width: 400px; /* Puedes ajustar este tamaño según sea necesario */
     height: auto;
 }
 
-.table-status {
-    margin-top: 10px;
-}
 
-.table-status button {
-    margin: 5px;
-    padding: 5px 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.table-status button:hover {
-    transform: scale(1.05); /* Agrandar al hacer hover */
-}
-
-.available {
-    background-color: #000;
-    color: #fff;
-}
-
-.occupied {
-    background-color: #000;
-    color: #fff;
-    border: 1px solid #000;
-}
-
-.out-of-service {
-    background-color: #ff4d4d;
-    color: #fff;
-}
 
 .table-name {
     font-size: 2em;
@@ -134,7 +121,7 @@ h1 {
 }
 
 .icon {
-    width: 40px; 
-    height: 40px;
-    vertical-align: middle; 
+    width: 45px; 
+    height: 45px;
+    vertical-align: right; 
 }
